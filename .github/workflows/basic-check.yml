@@ -1,8 +1,13 @@
 name: Basic Check
-on: [push, pull_request]
+on: 
+  push:
+  pull_request:
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - name: Pass
-        run: echo "Check passed!"
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Simple check
+        run: echo "✅ Basic check passed!"
