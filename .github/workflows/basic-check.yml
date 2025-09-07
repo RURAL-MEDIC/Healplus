@@ -1,0 +1,8 @@
+name: Basic Check
+on: [push, pull_request]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pass
+        run: echo "Check passed!"
