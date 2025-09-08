@@ -1,8 +1,9 @@
-name: Basic Check
-on: [push, pull_request]
+name: Security Check
+on: [pull_request]
 jobs:
-  check:
+  security:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: echo "Chec passed!"
+      - uses: github/codeql-action/init@v2
+      - uses: github/codeql-action/analyze@v2
