@@ -1,19 +1,22 @@
 import React from 'react'
 import "../styles/Searchbar.css"
+import Usericon from "../assets/user-solid-full.svg"
+import Hamburger from "../assets/hamburger.svg"
+import Language from "../assets/language.svg"
 
 export default function Searchbar() {
   return (
     <>
     {/* // <!-- Top Navbar --> */}
     <div className="top-bar">
-      <label className="menu-btn round-btn" for="hamburger"><input type="checkbox" name="hamburger" id="hamburger"/>≡</label>
+      <label className="menu-btn round-btn" for="hamburger"><input type="checkbox" name="hamburger" id="hamburger"/><img src={Hamburger} height="20px"/></label>
       <input type="text" placeholder="Search Medicine"/>
       <div className="right-btn-grp">
-          <div className="lang-btn round-btn">EN</div>
+          <div className="lang-btn round-btn"><img src={Language} height="22px" /></div>
           <div className="offer-btn round-btn">%</div>
       </div>
     </div>
-    {/* <!-- H  amburger Menu --> */}
+    {/* <!-- Hamburger Menu --> */}
     <div className="hamburger-menu">
       <div className="wrapper"></div>
       <div className="menu">
@@ -23,7 +26,7 @@ export default function Searchbar() {
                       <div className="profile">
                           <div className="profile-details">
                               <div className="profile-img">
-                                  <img src="default-profile-pic.jpg" alt=""/>
+                                  <img src={Usericon} alt=""/>
                               </div>
                               <div className="details">
                                   <div className="profile-name"><h3>John Doe</h3></div>

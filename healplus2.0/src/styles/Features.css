@@ -19,8 +19,7 @@
     /* width: 50%; */
     width: 30%;      /* Use percentage width for responsiveness */
     min-width: 100px; /* Prevents cards from getting too small */
-    background-image: linear-gradient( 0deg, #e8eee5d8, #d9edc0);
-    border: none;
+    border:  rgba(99, 199, 239, 0.699) 2px solid;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -28,6 +27,8 @@
     text-align: center;
     text-decoration: none;
     font-family: Arial, sans-serif;
+    background-color: rgba(163, 234, 213, 0.725);
+    
 }
 .Features h3 {
     word-break: break-word; /* Added */
@@ -35,10 +36,12 @@
     padding: 4px;
     margin-top: 2px;
     max-width: 100%;
+    color: black;
 }
 .Features img{
-    width: 65px;
-    height: 65px;
+    width: 60px;
+    height: 60px;
     border-radius: 8px;
     object-fit: cover;
+    padding-top: 8px;
 }

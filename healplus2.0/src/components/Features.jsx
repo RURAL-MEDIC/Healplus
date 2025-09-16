@@ -1,21 +1,24 @@
 import React from 'react';
+import Doctor from "../assets/calender.svg";
+import Bed from "../assets/bed.svg";
+import MedicineAvail from "../assets/medicine.png";
 import "../styles/Features.css";
 
 const Features = () => {
     return (
         <div className='Features'>
             <a href="#" target="_blank">
-                <img src="../img/medicine.png" alt=""/>
+                <img src={MedicineAvail} alt=""/>
                 <h3>Check Medicine</h3>
             </a>
 
             <a href="#" target="_blank">
-                <img src="../img/bed.svg" alt=""/>
+                <img src={Bed} alt=""/>
                 <h3>Inquire Empty Bed</h3>
             </a>
 
             <a href="#" target="_blank">
-                <img src="../img/doctor.png" alt=""/>
+                <img src={Doctor} alt=""/>
                 <h3>Doctor Appointment</h3>
             </a>
         </div>
