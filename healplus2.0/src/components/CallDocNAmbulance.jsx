@@ -1,0 +1,10 @@
+import React from 'react'
+
+export default function CallDocNAmbulance() {
+  return (
+    <div className='CallDocNAmbulance'>
+        <button class="ambulance">📞 Call an Ambbulence </button>
+        <button class="ambulance">🩺 Instant Doctor Call</button>
+    </div>
+  )
+}
