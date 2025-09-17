@@ -14,7 +14,7 @@ const Features = () => {
 
             <a href="#" target="_blank">
                 <img src={Bed} alt=""/>
-                <h3>Inquire Empty Bed</h3>
+                <h3>Check Hospital Bed</h3>
             </a>
 
             <a href="#" target="_blank">

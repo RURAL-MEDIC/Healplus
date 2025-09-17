@@ -1,0 +1,41 @@
+  *{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+        .card-contaier {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-radius:8px;
+            background: #f5f6fa;
+        }
+        .card{
+            background-color: rgb(218, 247, 237);
+            border: 1px solid black;
+            border-radius: 5px;
+            height: 230px;
+        }
+        .card img{
+            width: 140px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .card-content{
+            padding: 3px;   
+        }
+        .card-content h3{
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+            padding: 5px;
+            font-family: cursive;
+        }
+        .card-content h5{
+            margin: 0;
+            font-size: 1.2rem;
+            color: #078e05;
+            padding: 3px 1px;
+            font-family: cursive;
+            margin-top: 0;
+        }

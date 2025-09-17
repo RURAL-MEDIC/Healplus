@@ -1,5 +1,5 @@
 import "../styles/SlideShow.css";
-import japan8 from "../assets/japan8.jpg";
+import japan8 from "../assets/AIslide.jpg";
 
 export default function SlideShow() {
     return (
