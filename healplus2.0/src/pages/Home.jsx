@@ -4,6 +4,7 @@ import "../styles/Home.css";
 import LatestNews from '../components/LatestNews';
 import EmergencyBtn from '../components/EmergencyBtn';
 import Features from '../components/Features';
+import SlideShow from '../components/SlideShow';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <CallDocNAmbulance/>
             <EmergencyBtn/>
             <Features/>
+            <SlideShow/>
         </div>
     );
 }

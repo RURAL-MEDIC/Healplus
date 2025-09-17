@@ -13,7 +13,9 @@
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
-    border: rgb(152, 217, 230) 2px solid;
+    /* border: rgb(152, 217, 230) 2px solid; */
+    border: 2px solid #e6d4b8;
+    background-color: white;
 }
 .CallDocNAmbulance{
     display: flex;

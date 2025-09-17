@@ -4,8 +4,10 @@
 
 .button-24,
 .button-24:focus {
-  background: #FF4742;
-  border: 1px solid #FF4742;
+  /* background: #FF4742; */
+  background-color: #ee544a;
+  /* border: 1px solid #FF4742; */
+  border: 1px solid #d97757;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
   box-sizing: border-box;
@@ -32,9 +34,10 @@
 .button-24:active{
   background-color: initial;
   background-position: 0 0;
-  color: #FF4742;
+  /* color: #FF4742; */
+  color: #d97757;
 }
 
-.button-24:active {
+/* .button-24:active {
   opacity: .5;
-}
+} */

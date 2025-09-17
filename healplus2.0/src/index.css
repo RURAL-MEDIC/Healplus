@@ -11,6 +11,8 @@ body{
   overflow: auto;
   width: 100%;
   height: calc(100% - 70px - 60px);
+  /* background-color: #e0f0ed; */
+  background-color: #f0eee6;
 }
 #Home {
   width: 100%;

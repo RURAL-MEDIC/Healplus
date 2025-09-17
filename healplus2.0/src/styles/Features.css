@@ -1,7 +1,7 @@
 .Features{
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 124px;
     gap: 10px;
@@ -19,7 +19,8 @@
     /* width: 50%; */
     width: 30%;      /* Use percentage width for responsiveness */
     min-width: 100px; /* Prevents cards from getting too small */
-    border:  rgba(99, 199, 239, 0.699) 2px solid;
+    /* border:  rgba(99, 199, 239, 0.699) 2px solid; */
+    border: 2px solid #e6d4b8;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -27,7 +28,7 @@
     text-align: center;
     text-decoration: none;
     font-family: Arial, sans-serif;
-    background-color: rgba(163, 234, 213, 0.725);
+    background-color: white;
     
 }
 .Features h3 {

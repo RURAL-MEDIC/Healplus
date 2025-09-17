@@ -10,8 +10,9 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 17px;       /* ✅ keep horizontal padding */
-  border-bottom: 1px solid #ddd;
-  background: #fff;
+  /* border-bottom: 1px solid #ddd; */
+  /* background: #fff; */
+  background-color: #f0eee6;
   gap: 10px;
   z-index: 100;
 }
@@ -59,11 +60,12 @@
     right: 0;
     bottom: 0;
     margin-left: 0;
+    background-color: #f0eee6;
 }
 .hamburger-menu .wrapper {
   width: 100%;
   height: 100%;
-  background: rgba(211, 211, 211, 0.238);
+  background: rgba(0, 0, 0, 0.753);
   backdrop-filter: blur(3px);
   position: absolute;
   top: 0;
@@ -119,6 +121,10 @@ html:has(#hamburger:checked) .hamburger-menu{
   margin-left: 0;
   z-index: 999;
   animation: slideIn 0.3s ease forwards;
+}
+
+html:has(#hamburger:checked) body{
+  overflow: hidden;
 }
 
 @keyframes slideIn {
