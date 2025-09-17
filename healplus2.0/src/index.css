@@ -1,0 +1,23 @@
+*{
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+body{
+  margin: 0;  
+  overflow: auto;
+  width: 100%;
+  height: calc(100% - 70px - 60px);
+  /* background-color: #e0f0ed; */
+  background-color: #f0eee6;
+}
+#Home {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 70px !important;
+  margin-bottom: 60px;
+  padding-bottom: 90px !important;
+}

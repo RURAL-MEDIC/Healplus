@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+.chatbot-home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #f0f0f0;
+}
