@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import "../styles/CallDocNAmbulance.css";
 
 export default function CallDocNAmbulance() {
@@ -82,13 +84,13 @@ export default function CallDocNAmbulance() {
         <p>Call an Ambulance</p>
       </a>
 
-      <button className="ambulance">
+      <Link to="/doctor" className="ambulance">
         <div>🩺</div>
         <p>
           Consult <br />
           Doctor
         </p>
-      </button>
+      </Link>
 
       {/* Fallback modal for desktop users */}
       {showFallback && (
