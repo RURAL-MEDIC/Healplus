@@ -12,7 +12,7 @@ export default function Searchbar() {
     <>
     {/* // <!-- Top Navbar --> */}
     <div className="top-bar">
-      <label className="menu-btn round-btn" for="hamburger"><input type="checkbox" name="hamburger" id="hamburger"/><img src={Hamburger} height="20px"/></label>
+      <label className="menu-btn round-btn" htmlFor="hamburger"><input type="checkbox" name="hamburger" id="hamburger"/><img src={Hamburger} height="20px"/></label>
       {/* <form action="">
         <input type="text" placeholder="Search Medicine"/>
         <button type='submit'><img src={Search} height="22px" /></button>
@@ -61,7 +61,7 @@ export default function Searchbar() {
               </ul>
           </div>
       </div>
-      <label for="hamburger" className="close-btn">
+      <label htmlFor="hamburger" className="close-btn">
           <p>Tap here to return</p>
           <input type="checkbox" name="hamburger" id="hamburger"/>
       </label>
