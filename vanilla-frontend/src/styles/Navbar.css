@@ -6,7 +6,7 @@
         position: fixed;
         width: 100vw;
         height: 60px;
-        top: calc(100% - 60px);          /*For PC */
+        /*top: calc(100% - 60px);          /*For PC */
         bottom: 0;           /*For Mobile*/
         left: 0;
         border-top: 1px solid #6e6e6e;
