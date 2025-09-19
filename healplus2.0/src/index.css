@@ -14,10 +14,10 @@ body{
   /* background-color: #e0f0ed; */
   background-color: #f0eee6;
 }
-#Home {
+#Home, .chatbot-home {
   width: 100%;
   min-height: 100%;
   margin-top: 70px !important;
   margin-bottom: 60px;
-  padding-bottom: 90px !important;
+  /* padding-bottom: 90px !important;    */
 }
