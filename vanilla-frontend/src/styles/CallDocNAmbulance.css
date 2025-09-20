@@ -1,0 +1,85 @@
+.ambulance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: calc((100% - 20px) / 2);
+  /* max-width: 350px; */
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #e6d4b8;
+  background-color: white;
+  text-decoration: none;
+  color: #000000;
+}
+.CallDocNAmbulance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 250px;
+}
+
+/* Fallback modal overlay and dialog */
+.ambulance-fallback-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.ambulance-fallback {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.ambulance-fallback h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+.ambulance-number {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0 16px 0;
+}
+.ambulance-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.btn.primary {
+  background: linear-gradient(180deg, #ff7a18, #ff4e00);
+  color: white;
+  border: none;
+}
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Small responsive tweak: stack buttons on narrow viewports */
+@media (max-width: 420px) {
+  .ambulance-actions {
+    flex-direction: column;
+  }
+}
