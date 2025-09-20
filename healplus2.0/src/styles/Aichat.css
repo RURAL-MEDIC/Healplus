@@ -52,12 +52,13 @@
 .chatbody{
     padding: 15px 15px 0 15px;
     overflow-y: auto;
-    margin-top: 65px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 85px;
-    height: 60vh;
+    margin-bottom: 80px;
+    height: 61vh;
+    
    
 }
 .chatbody img{
