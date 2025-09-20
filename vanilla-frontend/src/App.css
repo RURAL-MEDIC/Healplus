@@ -3,3 +3,7 @@
   width: 100%;
   /* background-image: linear-gradient(to bottom right, #a6edc88e, #b4f6f73b); */
 }
+
+.main-content {
+  padding-bottom: 60px; /* same as Navbar height */
+}
