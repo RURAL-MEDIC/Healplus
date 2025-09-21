@@ -1,103 +1,58 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import profileIcon from "../assets/user-solid-full.svg";
-
 import "../styles/Doctor.css";
+import profileIcon from "../assets/user-solid-full.svg"; 
+import { GENERAL_DOCTORS, SPECIALISTS } from "../data/doctorData";
 
 const Doctor = () => {
   return (
     <div className="doctor-container">
-      {/* main container for general doctor */}
-
+      {/* General Doctors */}
       <div className="doctor-list-container">
-        {/* Heading / description */}
-        <Link to="#" className="general-doctor doctorPage-Link-headings">
-          {/* put same link in to as div.view-all-doctor */}
+        <Link to="/allgeneraldoctors" className="general-doctor doctorPage-Link-headings">
           <h1>General Doctor ➡</h1>
         </Link>
 
-        {/* Doctor list */}
         <div className="doctor-list doctorPage-cardContainer">
-          <Link className="doctor-card">
-            <div className="profile-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="doctor-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="doctor-card">
-            <div className="profile-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="doctor-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="doctor-card">
-            <div className="profile-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="doctor-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="doctor-card">
-            <div className="profile-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="doctor-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
+          {/* show only first 4 */}
+          {GENERAL_DOCTORS.slice(0, 4).map((doc) => (
+            <Link key={doc.id} className="doctor-card" to={`/doctor/${doc.id}`}>
+              <div className="profile-icon">
+                <img src={doc.image} alt={doc.name} />
+              </div>
+              <div className="doctor-name">
+                <p>{doc.name}</p>
+                <small>{doc.role}</small>
+              </div>
+            </Link>
+          ))}
         </div>
 
-        {/* View all doctors link */}
-        <Link to="#" className="view-all-doctors">
+        {/* full list on new page */}
+        <Link to="/allgeneraldoctors" className="view-all-doctors">
           <p>View All Doctors ➡</p>
         </Link>
       </div>
 
-      {/* container for specialists catalog */}
+      {/* Specialists Categories */}
       <div className="specialists-list-container">
-        <Link to="#" className="speacialist doctorPage-Link-headings">
+        <Link to="#" className="specialist doctorPage-Link-headings">
           <h1>Specialists ➡</h1>
         </Link>
+
         <div className="specialist-container doctorPage-cardContainer">
-          <Link className="specialist-card">
-            <div className="specialist-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="specialist-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="specialist-card">
-            <div className="specialist-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="specialist-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="specialist-card">
-            <div className="specialist-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="specialist-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
-          <Link className="specialist-card">
-            <div className="specialist-icon">
-              <img src={profileIcon} alt="" />
-            </div>
-            <div className="specialist-name">
-              <p>Jhon Doe</p>
-            </div>
-          </Link>
+          {SPECIALISTS.map((spe) => (
+            <Link key={spe.id} className="specialist-card" to={`/specialist/${spe.id}`}>
+              <div className="specialist-icon">
+                <img src={profileIcon} alt={spe.category} />
+              </div>
+              <div className="specialist-name">
+                <p>{spe.category}</p>
+              </div>
+            </Link>
+          ))}
         </div>
-        <Link to="#" className="view-all-specialists">
+
+        <Link to="/specialists" className="view-all-specialists">
           <p>View All Specialists ➡</p>
         </Link>
       </div>

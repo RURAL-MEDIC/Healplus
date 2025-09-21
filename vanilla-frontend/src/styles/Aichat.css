@@ -55,8 +55,8 @@
     margin-top: 56px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 80px;
+    gap: 5px;
+    margin-bottom: 78px;
     height: 61vh;
     
    
@@ -71,8 +71,8 @@
 .bot-massage{
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
+    gap: 5px;
+    margin-bottom: 10px;
     word-wrap: break-word;
     white-space: pre-line;
     
@@ -84,12 +84,13 @@
     max-width: 75%;
     font-size: 1rem;
     color: #333;
+    margin: 0;
 }
 .user-massage{
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
+    gap: 5px;
+    margin-bottom: 10px;
     justify-content: flex-end;
 }
 .user-massage .msg-text{
@@ -99,6 +100,7 @@
     max-width: 75%;
     font-size: 0.96rem;
     color: #feffff;
+    margin: 0;
 }
 .chat-footer{
     padding: 20px 20px;
