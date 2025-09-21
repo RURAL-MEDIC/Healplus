@@ -1,0 +1,161 @@
+.doctor-details-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: calc(100vh - 70px - 60px);
+  margin: 70px 0 0;
+  padding: 2rem;
+  gap: 2rem;
+  background: linear-gradient(to right, #f9f9f9, #eef2f7);
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Left Profile */
+.doctor-profile-section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 70px;
+  height: fit-content;
+}
+
+.doctor-profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.doctor-profile-section h1 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-profile-section h3 {
+  color: #3f72af;
+  margin-bottom: 1rem;
+}
+
+/* Right Info */
+.doctor-info-section {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distributes About + Appointment sections */
+  overflow-y: auto;
+  height: 100%;
+}
+
+.appointment-section{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.doctor-about-section h1,
+.appointment-section h1 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.book-appointment-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3f72af;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 10px; /* extra spacing if needed */
+}
+
+.book-appointment-btn:hover {
+  background: #2c5282;
+}
+
+/* ---------------- MOBILE RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  .doctor-details-page {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    min-height: calc(100vh - 70px - 60px);
+  }
+
+  .doctor-profile-section {
+    padding: 1.5rem;
+    position: relative;
+    top: 0;
+  }
+
+  .doctor-profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .doctor-profile-section h1 {
+    font-size: 20px;
+  }
+
+  .doctor-profile-section h3 {
+    font-size: 16px;
+  }
+
+  .doctor-info-section {
+    padding: 1.5rem;
+  }
+
+  .doctor-about-section h1,
+  .appointment-section h1 {
+    font-size: 18px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .book-appointment-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    font-size: 16px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .doctor-profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .doctor-profile-section h1 {
+    font-size: 18px;
+  }
+
+  .doctor-about-section h1,
+  .appointment-section h1 {
+    font-size: 16px;
+  }
+
+  .about-text {
+    font-size: 13px;
+  }
+}
