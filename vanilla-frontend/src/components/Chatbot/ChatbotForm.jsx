@@ -15,10 +15,16 @@ const ChatbotForm = ({chatHistory, setChatHistory ,generateBotResponse}) => {
    setChatHistory((history) => [...history, {role: 'user', text: userMassage}]);
 
    setTimeout(() => {
-           setChatHistory((history) => [...history, {role: 'model', text: "Thinking..."}]);
-  //  Call the Function to generate AI response
-        generateBotResponse([...chatHistory, {role: 'user', text: userMassage}]);
-   },400)
+  setChatHistory((history) => [...history, { role: 'model', text: "Thinking..." }]);
+  
+  // Call the Function to generate AI response
+  generateBotResponse(
+    [...chatHistory, { role: 'user', text: userMassage }],
+    setChatHistory
+  );
+}, 400);
+
+
   }
   
     return (
