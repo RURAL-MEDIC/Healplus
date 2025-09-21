@@ -12,7 +12,7 @@ const Features = () => {
                 <h3>Check Medicine</h3>
             </a>
 
-            <a href="#" target="_blank">
+            <a href="/CheckBed.html" target="_blank">
                 <img src={Bed} alt=""/>
                 <h3>Check Hospital Bed</h3>
             </a>
