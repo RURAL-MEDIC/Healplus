@@ -46,6 +46,7 @@
     display: flex;
     justify-content: center;
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 /* doctor card profile icons image */
@@ -55,6 +56,10 @@
 }
 
 /* doctor card details */
+.doctor-list .doctor-card .doctor-name{
+    padding: 0.5rem;
+}
+
 .doctor-list .doctor-card .doctor-name p{
     font-size: 18px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
