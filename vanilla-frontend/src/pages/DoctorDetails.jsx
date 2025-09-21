@@ -2,39 +2,9 @@ import { useParams, Link } from "react-router-dom";
 import { GENERAL_DOCTORS } from "../data/doctorData";
 import "../styles/DoctorDetails.css";
 
-// const DoctorDetails = () => {
-//   const { id } = useParams();
-//   const doctor = GENERAL_DOCTORS.find((doc) => doc.id === parseInt(id));
-
-//   if (!doctor) {
-//     return <h2>Doctor not found</h2>;
-//   }
-
-//   return (
-//     <div className="doctor-details-container">
-//       <div className="doctor-profile">
-//         <img src={doctor.image} alt={doctor.name} className="doctor-profile-img" />
-//       </div>
-//       <div className="doctor-info">
-//         <h1>{doctor.name}</h1>
-//         <h3>{doctor.role}</h3>
-//         <p><b>Qualification:</b> {doctor.qualification}</p>
-//         <p><b>Experience:</b> {doctor.experience}</p>
-//         <p>{doctor.about}</p>
-
-//         <Link to={`/appointment/${doctor.id}`} className="book-appointment-btn">
-//           Book Appointment
-//         </Link>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default DoctorDetails;
-
 const DoctorDetails = () => {
   const { id } = useParams();
-  const doctor = GENERAL_DOCTORS.find((doc) => doc.id === parseInt(id));
+  const doctor = GENERAL_DOCTORS.find((doc) => doc.id === id);
 
   if (!doctor) {
     return <h2>Doctor not found</h2>;
@@ -59,9 +29,8 @@ const DoctorDetails = () => {
         </div>
 
         <div className="appointment-section">
-          <h2>Book Appointment</h2>
           <Link to={`/appointment/${doctor.id}`} className="book-appointment-btn">
-            Book Now
+            Book Appointment
           </Link>
         </div>
       </div>

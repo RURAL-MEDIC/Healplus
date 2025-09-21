@@ -1,28 +1,78 @@
 // src/data/doctorData.js
 
 export const GENERAL_DOCTORS = [
-   {
-    id: 1,
+  {
+    id: "g-1",
     name: "Dr. John Doe",
     role: "General Physician",
     qualification: "MBBS, MD",
     experience: "10 years",
+    bio: "Trusted general physician for family care and preventive health.",
     about: "Dr. John Doe has over 10 years of experience treating common illnesses, preventive care, and wellness checkups.",
-    image: "../assets/user-solid-full.svg   ", // you can use your existing profileIcon or unique images
+    image: "/doctorProfileImages/doctor1.webp",
   },
   {
-    id: 2,
+    id: "g-2",
     name: "Dr. Priya Sharma",
     role: "General Physician",
     qualification: "MBBS",
     experience: "6 years",
+    bio: "Focused on internal medicine and family health consultations.",
     about: "Specializes in internal medicine and family health.",
-    image: "/assets/doctor2.png",
+    image: "/doctorProfileImages/doctor2.webp",
   },
-  { id: "g-3", name: "Ali Khan", role: "General Practitioner", bio: "Primary care and preventive medicine." },
-  { id: "g-4", name: "Maria Lee", role: "General Practitioner", bio: "Focus on rural healthcare." },
-  { id: "g-5", name: "Debojit Pal", role: "General Practitioner", bio: "Focus on rural healthcare." },
+  {
+    id: "g-3",
+    name: "Ali Khan",
+    role: "General Practitioner",
+    qualification: "MBBS, MD (Internal Medicine)",
+    experience: "10 years",
+    bio: "Experienced GP with expertise in primary and preventive care.",
+    about: "Dr. Ali Khan specializes in primary care and preventive medicine, with a focus on long-term wellness and lifestyle management.",
+    image: "/doctorProfileImages/doctor3.webp",
+  },
+  {
+    id: "g-4",
+    name: "Maria Lee",
+    role: "General Practitioner",
+    qualification: "MBBS",
+    experience: "7 years",
+    bio: "Dedicated to improving healthcare access in rural communities.",
+    about: "Dr. Maria Lee has dedicated her practice to rural healthcare, ensuring accessible and quality medical services for underserved communities.",
+    image: "/doctorProfileImages/doctor4.webp",
+  },
+  {
+    id: "g-5",
+    name: "Debojit Pal",
+    role: "General Practitioner",
+    qualification: "MBBS, Diploma in Family Medicine",
+    experience: "5 years",
+    bio: "Family doctor focusing on holistic and preventive treatments.",
+    about: "Dr. Debojit Pal provides compassionate family care with an emphasis on preventive treatment and holistic health support.",
+    image: "/doctorProfileImages/doctor5.webp",
+  },
+  {
+    id: "g-6",
+    name: "Sophia Martinez",
+    role: "General Practitioner",
+    qualification: "MBBS, MD (General Medicine)",
+    experience: "12 years",
+    bio: "Expert in chronic disease management and patient-centered care.",
+    about: "Dr. Sophia Martinez brings extensive experience in family practice, with expertise in chronic disease management and patient-centered care.",
+    image: "/doctorProfileImages/doctor6.webp",
+  },
+  {
+    id: "g-7",
+    name: "Ravi Sharma",
+    role: "General Practitioner",
+    qualification: "MBBS",
+    experience: "8 years",
+    bio: "Community health advocate with a focus on preventive medicine.",
+    about: "Dr. Ravi Sharma focuses on preventive medicine and community health initiatives, working to improve wellness through early detection and education.",
+    image: "/doctorProfileImages/doctor7.webp",
+  },
 ];
+
 
 export const SPECIALISTS = [
   {

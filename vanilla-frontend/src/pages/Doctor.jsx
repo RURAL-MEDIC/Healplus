@@ -8,7 +8,7 @@ const Doctor = () => {
     <div className="doctor-container">
       {/* General Doctors */}
       <div className="doctor-list-container">
-        <Link to="#" className="general-doctor doctorPage-Link-headings">
+        <Link to="/allgeneraldoctors" className="general-doctor doctorPage-Link-headings">
           <h1>General Doctor ➡</h1>
         </Link>
 
@@ -17,7 +17,7 @@ const Doctor = () => {
           {GENERAL_DOCTORS.slice(0, 4).map((doc) => (
             <Link key={doc.id} className="doctor-card" to={`/doctor/${doc.id}`}>
               <div className="profile-icon">
-                <img src={profileIcon} alt={doc.name} />
+                <img src={doc.image} alt={doc.name} />
               </div>
               <div className="doctor-name">
                 <p>{doc.name}</p>
