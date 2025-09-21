@@ -1,4 +1,3 @@
-
 // import React from 'react';
 // import '../styles/EmergencyBtn.css';
 
@@ -14,7 +13,7 @@
 
 
 import React, { useState, useRef, useEffect } from 'react';
-import '../styles/EmergencyBtn.css';
+import '../../styles/EmergencyBtn.css';
 
 const EmergencyBtn = () => {
     const emergencyNumber = "+919831753398"; // change as needed
@@ -77,7 +76,7 @@ const EmergencyBtn = () => {
               onClick={handleClick}
               role="button"
             >
-              Emergency Button
+              Call Nearest Medicine Shop
             </a>
 
             {showFallback && (
@@ -89,7 +88,7 @@ const EmergencyBtn = () => {
                 onKeyDown={handleKeyDown}
               >
                 <div className="emergency-fallback" tabIndex={-1} ref={fallbackRef}>
-                  <h2>Call emergency</h2>
+                  <h2>Call Nearest Medicine Shop</h2>
                   <p id="emergency-number-text" className="emergency-number">
                     {emergencyNumber}
                   </p>

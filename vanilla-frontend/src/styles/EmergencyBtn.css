@@ -1,3 +1,4 @@
+
 .EmergencyBtn{
     width: 100%;
 }
@@ -100,4 +101,6 @@
   .emergency-actions {
     flex-direction: column;
   }
+
 }
+
