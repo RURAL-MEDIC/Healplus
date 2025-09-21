@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import "../styles/Searchbar.css"
 import Usericon from "../assets/user-solid-full.svg"
 import Hamburger from "../assets/hamburger.svg"
@@ -8,6 +9,7 @@ import Settings from "../assets/settingbtn.svg"
 import Search from "../assets/searchicon.svg"
 
 export default function Searchbar() {
+      const navigate = useNavigate(); // ✅ hook returns a function
   return (
     <>
     {/* // <!-- Top Navbar --> */}
@@ -24,10 +26,13 @@ export default function Searchbar() {
             </form>
         </div>
       
-      <div className="right-btn-grp">
+        <div className="right-btn-grp">
           <div className="lang-btn round-btn"><img src={Language} height="22px" /></div>
-          <div className="offer-btn round-btn"><img src={Location} height="22px" /></div>
-      </div>
+          <button className="offer-btn round-btn" onClick={() => navigate("/map")}>
+            <img src={Location} height="22px" />
+          </button>  
+        </div>
+        
     </div>
     {/* <!-- Hamburger Menu --> */}
     <div className="hamburger-menu">
