@@ -7,6 +7,7 @@ import Home from './pages/Home.jsx'
 import ChatBotAI from './pages/aiinterface.jsx'
 import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
+import Map from './pages/MapPage.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/chat" element={<ChatBotAI />} />
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/medicine" element={<Medicine />} />
+          <Route path="/map" element={<Map />} />
         </Route>
       </Routes>
     </BrowserRouter>
