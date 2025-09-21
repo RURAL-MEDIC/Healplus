@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 html{
   height: 100%;
@@ -14,10 +15,20 @@ body{
   /* background-color: #e0f0ed; */
   background-color: #f0eee6;
 }
-#Home, .chatbot-home {
+#Home, .Medicine {
   width: 100%;
   min-height: 100%;
   margin-top: 70px !important;
   margin-bottom: 60px;
+  width: 100%;
+  padding: 0 15px;
+  overflow-x: hidden;
   /* padding-bottom: 90px !important;    */
 }
+
+ .chatbot-home{
+  width: 100%;
+  min-height: 100%;
+  margin-top: 70px !important;
+  margin-bottom: 60px;
+ }

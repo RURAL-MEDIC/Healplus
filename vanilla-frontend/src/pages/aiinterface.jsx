@@ -4,6 +4,7 @@ import Down from "../assets/downarrow.svg"
 import "../styles/Aichat.css";
 import ChatbotMsg from '../components/Chatbot/ChatbotMsg';
 import ChatbotFooter from '../components/Chatbot/ChatbotForm';
+import generateBotResponse from '../Api_backend/GenerateBotResponse';
 
 
 const Aiinterface = () => {
@@ -11,61 +12,30 @@ const Aiinterface = () => {
     const chatBodyRef = useRef();
 
     const generateBotResponse = async (history) => {
-        const updateHistory = (text) =>{
-            setChatHistory(prev => [...prev.filter(msg => msg.text !== "Thinking..."), {role: "model", text}]);
+           const updateHistory = (text) =>{
+               setChatHistory(prev => [...prev.filter(msg => msg.text !== "Thinking..."), {role: "model", text}]);
+           }
+
+        // Formet ChatHistory For API request
+        history = history.map(({role, text}) => ({role, parts: [{text}]}))
+        // console.log(history);
+        const apiKey = import.meta.env.VITE_GEMINI_API;
+        const requestOptions = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json'},
+            body: JSON.stringify({contents: history})
         }
-
-     // Format ChatHistory For API request
-     const formattedHistory = history.map(({role, text}) => ({role, parts: [{text}]}));
-     
-     try {
-         const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/chat`, {
-             method: 'POST',
-             headers: {
-                 'Content-Type': 'application/json',
-             },
-             body: JSON.stringify({ contents: formattedHistory })
-         });
-
-         if (!response.ok) {
-             const errorData = await response.json();
-             throw new Error(errorData.error || 'Failed to get response from server');
-         }
-
-         const data = await response.json();
-         const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
-         updateHistory(apiResponseText);
-     } catch (error) {
-         console.error('Chat error:', error);
-         updateHistory(`Sorry, I encountered an error: ${error.message}. Please try again.`);
-     }
- };
-
-    // const generateBotResponse = async (history) => {
-    //        const updateHistory = (text) =>{
-    //            setChatHistory(prev => [...prev.filter(msg => msg.text !== "Thinking..."), {role: "model", text}]);
-    //        }
-
-    //     // Formet ChatHistory For API request
-    //     history = history.map(({role, text}) => ({role, parts: [{text}]}))
-    //     // console.log(history);
-    //     const apiKey = import.meta.env.VITE_GEMINI_API;
-    //     const requestOptions = {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json'},
-    //         body: JSON.stringify({contents: history})
-    //     }
-    //     try{
-    //          const response = await fetch(apiKey, requestOptions);
-    //          const data = await response.json();
-    //          if(!response.ok) throw new Error(data.error.massage || "Something went wrong!");
-    //         //  console.log(data);
-    //         const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
-    //         updateHistory(apiResponseText);
-    //     }catch(error){
-    //         console.log(error);
-    //     }
-    // };
+        try{
+             const response = await fetch(apiKey, requestOptions);
+             const data = await response.json();
+             if(!response.ok) throw new Error(data.error.massage || "Something went wrong!");
+            //  console.log(data);
+            const apiResponseText = data.candidates[0].content.parts[0].text.replace(/\*\*(.*?)\*\*/g, "$1").trim();
+            updateHistory(apiResponseText);
+        }catch(error){
+            console.log(error);
+        }
+    };
     useEffect(()=>{
         chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behavior: "smooth"})
     }, [chatHistory]);

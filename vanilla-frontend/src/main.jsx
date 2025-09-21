@@ -8,6 +8,8 @@ import ChatBotAI from './pages/aiinterface.jsx'
 import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
 import DocDashboard from './components/DocDashboard.jsx'
+import Map from './pages/MapPage.jsx'
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,8 +19,12 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<Home/>}/>
           <Route path="/chat" element={<ChatBotAI />} />
           <Route path="/doctor" element={<Doctor />} />
+
           <Route path="/medicine" element={<Medicine />} /> 
           <Route path="/doc-dashboard" element={<DocDashboard />} />
+          <Route path="/medicine" element={<Medicine />} />
+          <Route path="/map" element={<Map />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

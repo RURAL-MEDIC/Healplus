@@ -21,7 +21,7 @@
     min-width: 100px; /* Prevents cards from getting too small */
     /* border:  rgba(99, 199, 239, 0.699) 2px solid; */
     border: 2px solid #e6d4b8;
-    border-radius: 8px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s ease-in-out;
