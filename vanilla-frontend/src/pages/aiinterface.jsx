@@ -10,8 +10,7 @@ import generateBotResponse from '../Api_backend/GenerateBotResponse';
 const Aiinterface = () => {
     const [chatHistory, setChatHistory] = React.useState([]);
     const chatBodyRef = useRef();
-       
-    
+
     useEffect(()=>{
         chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behavior: "smooth"})
     }, [chatHistory]);
