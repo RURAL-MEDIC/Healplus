@@ -21,7 +21,7 @@ export default function Searchbar() {
       </form> */}
        <div className="search-wrapper">
             <form className="search-bar">
-                <input type="text" id="search-inp" placeholder="Search Medicine..." />
+                <input type="text" id="search-inp" placeholder="Search..." />
                 <button type="submit" className="search-btn"><img src={Search} alt="" /></button>
             </form>
         </div>
