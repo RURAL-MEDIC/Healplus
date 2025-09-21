@@ -1,3 +1,4 @@
+
 .EmergencyBtn{
     width: 100%;
 }
@@ -29,6 +30,7 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   vertical-align: middle;
+  text-decoration: none;
 }
 
 .button-24:active{
@@ -41,3 +43,62 @@
 /* .button-24:active {
   opacity: .5;
 } */
+
+/* Fallback modal overlay and dialog */
+.emergency-fallback-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+.emergency-fallback {
+  background: #fff;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.emergency-fallback h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+}
+.emergency-number {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 8px 0 16px 0;
+}
+.emergency-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f6f6f6;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.btn.primary {
+  background: linear-gradient(180deg, #ff7a18, #ff4e00);
+  color: white;
+  border: none;
+}
+.btn:focus {
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Small responsive tweak: stack buttons on narrow viewports */
+@media (max-width: 420px) {
+  .emergency-actions {
+    flex-direction: column;
+  }
+}
