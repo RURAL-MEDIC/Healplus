@@ -7,12 +7,12 @@
   
 }
 
-.dashboard-container {
+.doctor-dashboard-container .dashboard-container {
   max-width: 800px;
   margin: 50px auto;
 }
 
-.dashboard-header {
+.doctor-dashboard-container .dashboard-header {
   background: linear-gradient(135deg, #e8e8e8 0%, #d0d0d0 100%);
   border-radius: 15px;
   padding: 30px;
@@ -22,7 +22,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.back-btn {
+.doctor-dashboard-container .back-btn {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -36,13 +36,13 @@
   transition: all 0.2s ease;
 }
 
-.back-btn:hover {
+.doctor-dashboard-container .back-btn:hover {
   background: #f8f9fa;
   border-color: #007bff;
   color: #007bff;
 }
 
-.theme-toggle {
+.doctor-dashboard-container .theme-toggle {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -55,13 +55,13 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.dashboard-header h1 {
+.doctor-dashboard-container .dashboard-header h1 {
   font-size: 28px;
   color: #333;
   font-weight: 600;
 }
 
-.doctor-card {
+.doctor-dashboard-container .doctor-card {
   background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
   border-radius: 15px;
   padding: 25px;
@@ -70,16 +70,16 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.doctor-card:hover {
+.doctor-dashboard-container .doctor-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.doctor-card.unavailable {
+.doctor-dashboard-container .doctor-card.unavailable {
   opacity: 0.6;
 }
 
-.doctor-info {
+.doctor-dashboard-container .doctor-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,14 +87,14 @@
   gap: 15px;
 }
 
-.doctor-name {
+.doctor-dashboard-container .doctor-name {
   font-size: 22px;
   font-weight: 600;
   color: #333;
   margin-bottom: 5px;
 }
 
-.availability-status {
+.doctor-dashboard-container .availability-status {
   font-size: 14px;
   padding: 4px 12px;
   border-radius: 20px;
@@ -102,17 +102,17 @@
   margin-bottom: 15px;
 }
 
-.available {
+.doctor-dashboard-container .available {
   background-color: #d4edda;
   color: #155724;
 }
 
-.unavailable-status {
+.doctor-dashboard-container .unavailable-status {
   background-color: #f8d7da;
   color: #721c24;
 }
 
-.room-info {
+.doctor-dashboard-container .room-info {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -120,12 +120,12 @@
   margin-bottom: 20px;
 }
 
-.room-id {
+.doctor-dashboard-container .room-id {
   font-size: 16px;
   color: #666;
 }
 
-.copy-btn {
+.doctor-dashboard-container .copy-btn {
   background: #fff;
   border: 2px solid #ddd;
   border-radius: 8px;
@@ -136,17 +136,17 @@
   transition: all 0.2s ease;
 }
 
-.copy-btn:hover {
+.doctor-dashboard-container .copy-btn:hover {
   background: #f8f9fa;
   border-color: #666;
   color: #333;
 }
 
-.copy-btn:active {
+.doctor-dashboard-container .copy-btn:active {
   transform: scale(0.95);
 }
 
-.video-call-btn {
+.doctor-dashboard-container .video-call-btn {
   background: #e0e0e0;
   color: #333;
   border: 2px solid #ccc;
@@ -159,19 +159,19 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.video-call-btn:hover {
+.doctor-dashboard-container .video-call-btn:hover {
   background: #d0d0d0;
   border-color: #bbb;
   transform: translateY(-1px);
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-.video-call-btn:active {
+.doctor-dashboard-container .video-call-btn:active {
   transform: translateY(0);
   background: #c0c0c0;
 }
 
-.video-call-btn:disabled {
+.doctor-dashboard-container .video-call-btn:disabled {
   background: #f0f0f0;
   color: #999;
   border-color: #ddd;
@@ -179,7 +179,7 @@
   box-shadow: none;
 }
 
-.video-call-btn:disabled:hover {
+.doctor-dashboard-container .video-call-btn:disabled:hover {
   transform: none;
   background: #f0f0f0;
 }

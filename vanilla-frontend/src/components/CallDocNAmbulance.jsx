@@ -1,9 +1,17 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 
 import "../styles/CallDocNAmbulance.css";
 
+
+
 export default function CallDocNAmbulance() {
+
+  const { t } = useTranslation();
+
+
   // Change the phone number below to the emergency number you want to dial
   const ambulanceNumber = "+919831753398"; // Enter your ambulance number here
 
@@ -81,13 +89,14 @@ export default function CallDocNAmbulance() {
         onClick={handleAmbulanceClick}
       >
         <div>📞</div>
-        <p>Call an Ambulance</p>
+        <p>{t('general.Call')} an Ambulance</p>
+        {/* <p>Call an Ambulance</p> */}
       </a>
 
       <Link to="/doc-dashboard" className="ambulance">
         <div>🩺</div>
         <p>
-          Consult <br />
+          {t('Consult')} <br />
           Doctor
         </p>
       </Link>
@@ -102,19 +111,19 @@ export default function CallDocNAmbulance() {
           onKeyDown={handleKeyDown}
         >
           <div className="ambulance-fallback" tabIndex={-1} ref={fallbackRef}>
-            <h2>Call Ambulance</h2>
+            <h2>{t('Call Ambulance')}</h2>
             <p id="ambulance-number-text" className="ambulance-number">
               {ambulanceNumber}
             </p>
             <div className="ambulance-actions">
               <a className="btn primary" href={`tel:${ambulanceNumber}`}>
-                Open Dialer
+                {t('Open Dialer')}
               </a>
               <button className="btn" onClick={handleCopy}>
-                Copy Number
+                {t('Copy Number')}
               </button>
               <button className="btn" onClick={() => setShowFallback(false)}>
-                Close
+                {t('Close')}
               </button>
             </div>
           </div>

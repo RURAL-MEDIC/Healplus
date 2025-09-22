@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import "../../styles/RecentlyViewedMedicine.css"
 import { MEDICINE_DATA } from '../../data/medicineData'
 import { useSearch } from '../../contexts/SearchContext'

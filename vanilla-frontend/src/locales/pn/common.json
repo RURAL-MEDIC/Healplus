@@ -1,0 +1,30 @@
+{
+    "navbar": {
+      "home": "ਘਰ",
+      "doctor": "ਡਾਕਟਰ", 
+      "medicine": "ਦਵਾਈ",
+      "chat": "ਗੱਲਬਾਤ"
+    },
+    "searchbar": {
+      "searchPlaceholder": "ਦਵਾਈਆਂ ਖੋਜੋ...",
+      "profileName": "ਜੌਨ ਡੋ",
+      "verify": "ਪ੍ਰਮਾਣਿਤ ਕਰੋ",
+      "editProfile": "ਪ੍ਰੋਫਾਈਲ ਸੰਪਾਦਿਤ ਕਰੋ",
+      "medicalHistory": "ਮੈਡੀਕਲ ਇਤਿਹਾਸ",
+      "scheduledAppointment": "ਨਿਰਧਾਰਤ ਮੁਲਾਕਾਤ",
+      "getHelp": "ਮਦਦ ਲਓ",
+      "version": "ਸੰਸਕਰਣ: 1.0.0",
+      "tapToReturn": "ਵਾਪਸ ਜਾਣ ਲਈ ਟੈਪ ਕਰੋ"
+    },
+    "medicine": {
+      "title": "ਦਵਾਈ",
+      "searchMedicine": "ਦਵਾਈ ਖੋਜੋ",
+      "recentlyViewed": "ਹਾਲ ਹੀ ਵਿੱਚ ਵੇਖਿਆ ਗਿਆ",
+      "suggested": "ਸੁਝਾਅ",
+      "callShop": "ਸ਼ੌਪ ਨੂੰ ਕਾਲ ਕਰੋ"
+    },
+    "general":{
+      "Call": "ਕਾਲ ਕਰੋ",
+      "doctor": "ਡਾਕਟਰ ਨੂੰ ਕਾਲ ਕਰੋ"
+    }
+  }

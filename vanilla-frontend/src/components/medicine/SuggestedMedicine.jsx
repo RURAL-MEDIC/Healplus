@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import "../../styles/SuggestedMedicine.css"
 import { Link } from 'react-router-dom'
 import { MEDICINE_DATA } from '../../data/medicineData'
@@ -6,6 +7,7 @@ import { useSearch } from '../../contexts/SearchContext'
 
 export default function SuggestedMedicine() {
   const { searchTerm, searchResults } = useSearch();
+  const { t } = useTranslation();
 
   // If there's a search term, don't show suggested medicines
   if (searchTerm) {
@@ -17,7 +19,7 @@ export default function SuggestedMedicine() {
 
   return (
     <div className='SuggestedMedicine'>
-      <h2>Common Medicines</h2>
+       <h2>{t('medicine.commonMedicines')}</h2>
       <div className="SuggestedMedicineCardContainer">
         {commonMedicines.map(medicine => (
           <Link key={medicine.id} className="SuggestedMedicine-card" to={`/medicine/${medicine.id}`}>
