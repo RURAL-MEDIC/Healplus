@@ -7,9 +7,9 @@ import Home from './pages/Home.jsx'
 import ChatBotAI from './pages/aiinterface.jsx'
 import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
-
-import DocDashboard from './components/DocDashboard.jsx'
+import Appointment from './pages/appointment.jsx'
 import Map from './pages/MapPage.jsx'
+import DocDashboard from './components/DocDashboard.jsx'
 
 
 import AllGeneralDoctors from './pages/AllGeneralDoctors.jsx'
@@ -23,16 +23,18 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App/>}>
           <Route index element={<Home/>}/>
           <Route path="/chat" element={<ChatBotAI />} />
-          <Route path="/doctor" element={<Doctor />} />
 
           <Route path="/medicine" element={<Medicine />} /> 
-          <Route path="/doc-dashboard" element={<DocDashboard />} />
           <Route path="/medicine" element={<Medicine />} />
 
           <Route path="/map" element={<Map />} />
 
+          <Route path="/doc-dashboard" element={<DocDashboard />} />
+
+          <Route path="/doctor" element={<Doctor />} />
           <Route path="/allgeneraldoctors" element={<AllGeneralDoctors />} />
           <Route path="/doctor/:id" element={<DoctorDetails />} />
+          <Route path="/appointment/:id" element={<Appointment />} />
         </Route>
       </Routes>
     </BrowserRouter>
