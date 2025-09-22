@@ -9,6 +9,7 @@ import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
 import Appointment from './pages/appointment.jsx'
 import Map from './pages/MapPage.jsx'
+import DocDashboard from './components/DocDashboard.jsx'
 
 
 import AllGeneralDoctors from './pages/AllGeneralDoctors.jsx'
@@ -27,6 +28,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/medicine" element={<Medicine />} />
 
           <Route path="/map" element={<Map />} />
+
+          <Route path="/doc-dashboard" element={<DocDashboard />} />
 
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/allgeneraldoctors" element={<AllGeneralDoctors />} />
