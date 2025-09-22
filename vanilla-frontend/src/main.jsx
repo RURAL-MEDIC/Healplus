@@ -7,7 +7,7 @@ import Home from './pages/Home.jsx'
 import ChatBotAI from './pages/aiinterface.jsx'
 import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
-import Appointment from './pages/appointment.jsx'
+import Appointment from './pages/Appointment.jsx'
 import Map from './pages/MapPage.jsx'
 import DocDashboard from './components/DocDashboard.jsx'
 
