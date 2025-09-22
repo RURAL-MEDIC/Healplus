@@ -84,7 +84,7 @@ export default function CallDocNAmbulance() {
         <p>Call an Ambulance</p>
       </a>
 
-      <Link to="/doc-dashboard" className="ambulance">
+      <Link to="/doctor" className="ambulance">
         <div>🩺</div>
         <p>
           Consult <br />

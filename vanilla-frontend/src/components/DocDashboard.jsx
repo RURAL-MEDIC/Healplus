@@ -75,13 +75,6 @@ const DoctorDashboard = () => {
     navigate(-1); // Go back to previous page
   };
 
-  const doctors = [
-    { name: 'Dr Raj', available: true, roomId: '54324' },
-    { name: 'Dr Roy', available: true, roomId: '49345' },
-    { name: 'Dr Pal', available: false, roomId: '23556' },
-    { name: 'Debiot', available: true, roomId: '23123' }
-  ];
-
   return (
     <div className="doctor-dashboard-container">
       <div className="dashboard-container">

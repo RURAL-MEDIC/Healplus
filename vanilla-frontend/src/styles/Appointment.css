@@ -1,0 +1,106 @@
+/* Appointment page wrapper */
+.appointment-page {
+  min-height: calc(100vh - 60px); /* account for bottom nav */
+  margin: 70px 0 0; /* account for top navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fa;
+}
+
+/* Appointment card */
+.appointment-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2rem;
+  width: 360px;
+  text-align: center;
+}
+
+/* Doctor Info */
+.doctor-info {
+  margin-bottom: 1.5rem;
+}
+.doctor-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.doctor-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222;
+  margin-top: 0.8rem;
+}
+.doctor-role {
+  font-size: 0.95rem;
+  color: #666;
+}
+.doctor-status {
+  font-size: 0.9rem;
+  color: #2e7d32;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+/* Room Info */
+.room-info {
+  background: #f9fafc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+}
+.room-id {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.8rem;
+}
+.room-id span {
+  font-weight: bold;
+}
+.copy-btn {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 8px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.copy-btn:hover {
+  background: #d5d5d5;
+}
+
+/* Video Call */
+.video-call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+.video-call-btn:hover {
+  background: #1565c0;
+}
+
+/* Error message */
+.appointment-error {
+  text-align: center;
+  margin-top: 100px;
+  color: red;
+  font-size: 1.2rem;
+}
