@@ -28,32 +28,6 @@
   text-align: end;
 }
 
-.specialists-list-container
-  .specialist-container
-  .specialist-card
-  .specialist-icon {
-  flex: 0 0 30%;
-}
-.specialists-list-container
-  .specialist-container
-  .specialist-card
-  .specialist-icon
-  img {
-  max-height: 75px;
-}
-
-.specialists-list-container
-  .specialist-container
-  .specialist-card
-  .specialist-name {
-  background: #f5f5f5;
-  flex: 0 0 70%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem;
-}
-
 .specialists-list-container .view-all-specialists {
   text-align: end;
 }

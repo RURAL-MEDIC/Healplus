@@ -17,7 +17,7 @@ const Card = ({ variant, img, title, info, path, children }) => {
   );
 
   return path ? (
-    <Link className="card card-link" to={path}>
+    <Link className="card-link" to={path}>
       {cardContent}
     </Link>
   ) : (
