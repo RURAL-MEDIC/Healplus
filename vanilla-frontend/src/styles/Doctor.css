@@ -1,11 +1,9 @@
 /* main page of doctor.jsx */
 .doctor-container {
   margin: 70px 0 0;
-  padding: 0.5rem auto;
   min-height: calc(100vh-60px);
 }
 
-/* for general doctor section */
 .doctor-container .doctorPage-Link-headings {
   text-decoration: none;
   color: #000000;
@@ -13,17 +11,14 @@
 
 /* doctor list container */
 .doctor-container .doctorPage-cardContainer {
-  padding: 0.5rem;
-  height: fit-content;
-  max-width: 99%;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
 }
 
-/* view all doctor link */
+/* view all doctor and specialist link */
 .doctor-list-container .view-all-doctors {
   text-align: end;
 }

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import Card from "../components/card";
+import { GENERAL_DOCTORS, SPECIALISTS } from "../data/doctorData";
 import "../styles/Doctor.css";
 import profileIcon from "../assets/user-solid-full.svg";
-import { GENERAL_DOCTORS, SPECIALISTS } from "../data/doctorData";
 
 const Doctor = () => {
   return (
@@ -16,17 +16,17 @@ const Doctor = () => {
           <h1>General Doctor ➡</h1>
         </Link>
 
-        <div className="doctor-list doctorPage-cardContainer">
+        <div className="doctorPage-cardContainer">
           {/* show only first 4 */}
-          {GENERAL_DOCTORS.slice(0, 4).map((doc) => (
+          {GENERAL_DOCTORS.slice(0,4).map((doc) => (
             <Card
               key={doc.id}
-              variant="small"
+              variant="medium"
               path={`/doctor/${doc.id}`}
               img={doc.image}
               title={doc.name}
               info={doc.role}
-            />
+            ></Card>
           ))}
         </div>
 
@@ -38,31 +38,19 @@ const Doctor = () => {
 
       {/* Specialists Categories */}
       <div className="specialists-list-container">
-        <Link to="#" className="specialist doctorPage-Link-headings">
+        <Link to="/specialists" className="specialist doctorPage-Link-headings">
           <h1>Specialists ➡</h1>
         </Link>
 
         <div className="specialist-container doctorPage-cardContainer">
-          {SPECIALISTS.map((spe) => (
-            // <Link
-            //   key={spe.id}
-            //   className="specialist-card"
-            //   to={`/specialist/${spe.id}`}
-            // >
-            //   <div className="specialist-icon">
-            //     <img src={profileIcon} alt={spe.category} />
-            //   </div>
-            //   <div className="specialist-name">
-            //     <p>{spe.category}</p>
-            //   </div>
-            //   {/* <Card img={profileIcon} title={spe.category} /> */}
-            // </Link>
+          {SPECIALISTS.slice(0,4).map((spe) => (
             <Card
               key={spe.id}
-              variant="collumn"
+              variant="small"
               path={`/specialist/${spe.id}`}
               img={profileIcon}
-              title={spe.category}></Card>
+              title={spe.category}
+            ></Card>
           ))}
         </div>
 

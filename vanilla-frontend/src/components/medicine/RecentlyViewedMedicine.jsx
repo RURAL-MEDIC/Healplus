@@ -12,13 +12,13 @@ export default function RecentlyViewedMedicine() {
   }
 
   // Get recently viewed medicines (last 5 from the data)
-  const recentMedicines = MEDICINE_DATA.slice(-5);
+  // const recentMedicines = MEDICINE_DATA.slice(-5);
 
   return (
     <div className='RecentlyViewedMedicine'>
       <h2>Recently Viewed</h2>
       <div className="RecentMedicinecard-container">
-        {recentMedicines.map(medicine => (
+        {MEDICINE_DATA.slice(-5).map(medicine => (
           <div key={medicine.id} className="card">
             <img src={medicine.image} alt={medicine.name} />
             <div className="card-content">

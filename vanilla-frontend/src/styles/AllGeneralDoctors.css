@@ -1,15 +1,16 @@
 /* Main container */
 .all-general-doctors {
   margin: 70px 0 0;
-  padding: 0.5rem;
   min-height: calc(100vh - 60px);
 }
 
-.allGeneralDoctor-list {
+.all-general-doctors .allGeneralDoctor-list {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 2 per row when possible */
+  gap: 0.5rem; /* equal space between cards */
+  padding: 0.5rem; /* equal space around the whole grid */
+  justify-content: center; /* centers cards if fewer than full row */
+  
 }
 
 /* Heading */
@@ -21,10 +22,3 @@
   color: #000000;
 }
 
-/* Doctor list grid */
-.all-general-doctors .doctorPage-cardContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 15px;
-  margin: 0 auto;
-}

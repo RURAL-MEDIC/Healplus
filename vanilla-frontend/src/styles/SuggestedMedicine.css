@@ -1,12 +1,17 @@
 .SuggestedMedicineCardContainer{
     /* padding: 0.5rem; */
-    height: fit-content;
+    /* height: fit-content;
     max-width: 99%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    margin: 0 auto;
+    margin: 0 auto; */
+
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 2 per row when possible */
+  gap: 1rem;
+  justify-content: center;
 }
 
 
