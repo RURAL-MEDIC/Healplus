@@ -1,0 +1,24 @@
+.GeneralDoctor {
+  width: 100vw;
+}
+
+.GeneralDoctor .heading-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.GeneralDoctor .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.GeneralDoctor .view-all-doctors {
+  border: none;
+  background: none;
+  font-size: large;
+  display: block;
+  margin: 0 0 0 auto;
+}

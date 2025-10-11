@@ -1,0 +1,22 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-more .show-more-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.show-more .view-all {
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-size: large;
+  display: block;
+  margin: 0 0 0 auto;
+  color: #551a88;
+}
