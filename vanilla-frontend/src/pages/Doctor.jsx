@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { ErrorBoundary } from "react-error-boundary";
 import GeneralDoctor from "../components/Doctor/GeneralDoctor";
 import SpecialistDoctor from "../components/Doctor/SpecialistDoctor";
 import "../styles/Doctor.css";

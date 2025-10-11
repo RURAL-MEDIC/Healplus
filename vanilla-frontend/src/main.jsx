@@ -10,9 +10,6 @@ import Doctor from './pages/Doctor.jsx'
 import Appointment from './pages/Appointment.jsx'
 import Map from './pages/MapPage.jsx'
 import DocDashboard from './pages/DocDashboard.jsx'
-
-
-import AllGeneralDoctors from './pages/AllGeneralDoctors.jsx'
 import DoctorDetails from './pages/DoctorDetails.jsx'
 
 
@@ -31,7 +28,6 @@ createRoot(document.getElementById('root')).render(
           <Route path="/doc-dashboard" element={<DocDashboard />} />
 
           <Route path="/doctor" element={<Doctor />} />
-          <Route path="/allgeneraldoctors" element={<AllGeneralDoctors />} />
           <Route path="/doctor/:id" element={<DoctorDetails />} />
           <Route path="/appointment/:id" element={<Appointment />} />
         </Route>
