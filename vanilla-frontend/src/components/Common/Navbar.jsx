@@ -1,9 +1,9 @@
 import React from 'react'
-import "../styles/Navbar.css"
-import Homeicon from "../assets/house.svg"
-import Chaticon from "../assets/chatbot.png"
-import Medicineicon from "../assets/pill.svg"
-import Doctoricon from "../assets/stethoscope.svg"
+import "../../styles/Common/Navbar.css"
+import Homeicon from "../../assets/house.svg"
+import Chaticon from "../../assets/chatbot.png"
+import Medicineicon from "../../assets/pill.svg"
+import Doctoricon from "../../assets/stethoscope.svg"
 
 import { Link } from "react-router-dom";
 

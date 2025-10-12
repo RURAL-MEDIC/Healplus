@@ -1,31 +1,10 @@
-.RecentMedicinecard-container{
-           border-radius:15px;
-           gap: 20px;
-            height: 250px;
-            min-width: 100%;
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-        }
-        .RecentMedicinecard-container .card{
-            display: inline-block;
-            margin: 0 10px 5px 0;
-            background-color: white;
-            border: 2px solid #eed09f;
-            border-radius: 20px;
-            overflow: hidden;
-            height: 240px;
-            width: 160px;
-        }
-        .RecentMedicinecard-container .card img{
-            width: 160px;
-            aspect-ratio: 1 / 1;
-        }
-        .RecentMedicinecard-container .card-content{
-            height: calc(100% - 160px);
-            width: 100%;
-            padding: 10px;   
-        }
-        .RecentMedicinecard-container .card-content h3{
-            margin: 0;
-        }
+.RecentMedicinecard-container {
+  gap: 20px;
+  height: 250px;
+  min-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  display: grid;
+  grid-auto-flow: column;
+}

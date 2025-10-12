@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Card from "../Card";
-import ShowMore from "../ShowMore";
+import Card from "../Common/Card";
+import ShowMore from "../Common/ShowMore";
 import profileIcon from "../../assets/user-solid-full.svg";
 import { SPECIALISTS } from "../../data/doctorData";
 import "../../styles/DoctorComponent/SpecialistDoctor.css";
@@ -23,7 +23,10 @@ const SpecialistDoctor = () => {
             img={profileIcon}
             title={spe.category}
           />
-        )}>View All Specialists</ShowMore>
+        )}
+      >
+        View All Specialists
+      </ShowMore>
     </div>
   );
 };

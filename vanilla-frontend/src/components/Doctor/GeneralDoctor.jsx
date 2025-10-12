@@ -1,20 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Card from "../Card";
-import ShowMore from "../ShowMore";
+import Card from "../Common/Card"
+import ShowMore from "../Common/ShowMore"
 import { GENERAL_DOCTORS } from "../../data/doctorData";
 import "../../styles/DoctorComponent/GeneralDoctor.css";
 
 const GeneralDoctor = () => {
   return (
     <div className="GeneralDoctor">
-      <Link to="/allgeneraldoctors" className="heading-link">
+      <div className="heading-link">
         <h1>General Doctor ➡</h1>
-      </Link>
+      </div>
 
       <ShowMore
         items={GENERAL_DOCTORS}
-        limit={4}
         renderItem={(doc) => (
           <Card
             key={doc.id}
@@ -25,7 +23,7 @@ const GeneralDoctor = () => {
             info={doc.role}
           />
         )}
-      >Show all General Doctor</ShowMore>
+      >View all General Doctor</ShowMore>
     </div>
   );
 };

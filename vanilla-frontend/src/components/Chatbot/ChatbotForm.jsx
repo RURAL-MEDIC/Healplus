@@ -1,6 +1,6 @@
 import  { useRef } from 'react';
 import React from 'react';
-import "../../styles/Aichat.css";
+import "../../styles/Chatbot/Aichat.css";
 import Send from "../../assets/send.svg"
 const ChatbotForm = ({chatHistory, setChatHistory ,generateBotResponse}) => {
 
