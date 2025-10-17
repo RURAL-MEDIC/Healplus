@@ -1,10 +1,10 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next';
-import "../styles/Navbar.css"
-import Homeicon from "../assets/house.svg"
-import Chaticon from "../assets/chatbot.png"
-import Medicineicon from "../assets/pill.svg"
-import Doctoricon from "../assets/stethoscope.svg"
+import "../../styles/Common/Navbar.css"
+import Homeicon from "../../assets/house.svg"
+import Chaticon from "../../assets/chatbot.png"
+import Medicineicon from "../../assets/pill.svg"
+import Doctoricon from "../../assets/stethoscope.svg"
+import { useTranslation } from "react-i18next";
 
 import { Link } from "react-router-dom";
 

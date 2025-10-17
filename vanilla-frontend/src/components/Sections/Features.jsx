@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Doctor from "../assets/calender.svg";
-import Bed from "../assets/bed.svg";
-import MedicineAvail from "../assets/chatbot2.0.png";
-import "../styles/Features.css";
+import Doctor from "../../assets/calender.svg";
+import Bed from "../../assets/bed.svg";
+import MedicineAvail from "../../assets/chatbot2.0.png";
+import "../../styles/Sections/Features.css";
 
 const Features = () => {
     return (

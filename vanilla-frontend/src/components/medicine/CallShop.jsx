@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../../styles/EmergencyBtn.css';
+import '../../styles/Common/EmergencyBtn.css';
 
 const EmergencyBtn = () => {
     const emergencyNumber = "+919831753398"; // change as needed
