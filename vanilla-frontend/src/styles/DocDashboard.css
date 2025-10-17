@@ -76,7 +76,7 @@
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
-.doctor-dashboard-container .doctor-card.unavailable {
+.doctor-dashboard-container.doctor-card.unavailable {
   opacity: 0.6;
 }
 
@@ -216,7 +216,7 @@ body.dark .back-btn:hover {
   color: #e0e0e0;
 }
 
-body.dark .doctor-card {
+.doctor-dashboard-container body.dark .doctor-card {
   background: linear-gradient(135deg, #2d2d2d 0%, #3a3a3a 100%);
 }
 
@@ -285,7 +285,7 @@ body.dark .video-call-btn:disabled:hover {
     margin: 5px;
   }
 
-  .doctor-card {
+  .doctor-dashboard-container .doctor-card {
     padding: 20px;
   }
 

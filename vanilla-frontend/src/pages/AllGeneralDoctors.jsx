@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Card from "../components/card";
 import { GENERAL_DOCTORS } from "../data/doctorData";
 import "../styles/AllGeneralDoctors.css";
 import profileIcon from "../assets/user-solid-full.svg";
@@ -10,18 +11,16 @@ const AllGeneralDoctors = () => {
 
       <div className="allGeneralDoctor-list">
         {GENERAL_DOCTORS.map((doc) => (
-          <Link key={doc.id} className="doctor-card" to={`/doctor/${doc.id}`}>
-            <div className="profile-icon">
-              <img src={doc.image} alt={doc.name} />
-            </div>
-            <div className="doctor-info">
-              <p>
-                <strong>{doc.name}</strong>
-              </p>
-              <small>{doc.role}</small>
-              <p>{doc.bio}</p>
-            </div>
-          </Link>
+          <Card
+            key={doc.id}
+            variant="medium"
+            path={`/doctor/${doc.id}`}
+            img={doc.image}
+            title={doc.name}
+            info={doc.role}
+          >
+            <small>{doc.bio}</small>
+          </Card>
         ))}
       </div>
     </div>

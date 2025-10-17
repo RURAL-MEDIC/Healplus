@@ -10,7 +10,7 @@ import Medicine from './pages/Medicine.jsx'
 import Doctor from './pages/Doctor.jsx'
 import Appointment from './pages/Appointment.jsx'
 import Map from './pages/MapPage.jsx'
-import DocDashboard from './components/DocDashboard.jsx'
+import DocDashboard from './pages/DocDashboard.jsx'
 
 
 import AllGeneralDoctors from './pages/AllGeneralDoctors.jsx'
@@ -25,7 +25,6 @@ createRoot(document.getElementById('root')).render(
           <Route index element={<Home/>}/>
           <Route path="/chat" element={<ChatBotAI />} />
 
-          <Route path="/medicine" element={<Medicine />} /> 
           <Route path="/medicine" element={<Medicine />} />
 
           <Route path="/map" element={<Map />} />

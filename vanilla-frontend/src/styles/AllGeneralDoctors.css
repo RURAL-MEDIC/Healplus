@@ -1,15 +1,16 @@
 /* Main container */
 .all-general-doctors {
   margin: 70px 0 0;
-  padding: 1rem;
   min-height: calc(100vh - 60px);
 }
 
-.allGeneralDoctor-list {
+.all-general-doctors .allGeneralDoctor-list {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* 2 per row when possible */
+  gap: 0.5rem; /* equal space between cards */
+  padding: 0.5rem; /* equal space around the whole grid */
+  justify-content: center; /* centers cards if fewer than full row */
+  
 }
 
 /* Heading */
@@ -21,69 +22,3 @@
   color: #000000;
 }
 
-/* Doctor list grid */
-.all-general-doctors .doctorPage-cardContainer {
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 15px;
-  margin: 0 auto;
-}
-
-/* Doctor card */
-.all-general-doctors .doctor-card {
-  background-color: #c9d6df;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0.5rem;
-  text-decoration: none;
-  color: #000000;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover effect */
-.all-general-doctors .doctor-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Profile section */
-.all-general-doctors .doctor-card .profile-icon {
-  width: 100%;
-  height: 180px;
-  border-radius: 12px;
-  background: #ffffff;
-  display: flex;
-  /* align-items: center; */
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-
-.all-general-doctors .doctor-card .profile-icon img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-}
-
-/* Doctor info */
-.all-general-doctors .doctor-card .doctor-info p {
-  margin: 5px 0;
-  font-size: 16px;
-  font-weight: 600;
-  color: #000000;
-}
-
-.all-general-doctors .doctor-card .doctor-info small {
-  display: block;
-  font-size: 14px;
-  color: #333333;
-  margin-bottom: 5px;
-}
-
-.all-general-doctors .doctor-card .doctor-info p:last-child {
-  font-size: 13px;
-  font-weight: normal;
-  color: #444444;
-}

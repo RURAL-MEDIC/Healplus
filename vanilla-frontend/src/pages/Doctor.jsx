@@ -1,29 +1,32 @@
 import { Link } from "react-router-dom";
-import "../styles/Doctor.css";
-import profileIcon from "../assets/user-solid-full.svg"; 
+import Card from "../components/card";
 import { GENERAL_DOCTORS, SPECIALISTS } from "../data/doctorData";
+import "../styles/Doctor.css";
+import profileIcon from "../assets/user-solid-full.svg";
 
 const Doctor = () => {
   return (
     <div className="doctor-container">
       {/* General Doctors */}
       <div className="doctor-list-container">
-        <Link to="/allgeneraldoctors" className="general-doctor doctorPage-Link-headings">
+        <Link
+          to="/allgeneraldoctors"
+          className="general-doctor doctorPage-Link-headings"
+        >
           <h1>General Doctor ➡</h1>
         </Link>
 
-        <div className="doctor-list doctorPage-cardContainer">
+        <div className="doctorPage-cardContainer">
           {/* show only first 4 */}
-          {GENERAL_DOCTORS.slice(0, 4).map((doc) => (
-            <Link key={doc.id} className="doctor-card" to={`/doctor/${doc.id}`}>
-              <div className="profile-icon">
-                <img src={doc.image} alt={doc.name} />
-              </div>
-              <div className="doctor-name">
-                <p>{doc.name}</p>
-                <small>{doc.role}</small>
-              </div>
-            </Link>
+          {GENERAL_DOCTORS.slice(0,4).map((doc) => (
+            <Card
+              key={doc.id}
+              variant="medium"
+              path={`/doctor/${doc.id}`}
+              img={doc.image}
+              title={doc.name}
+              info={doc.role}
+            ></Card>
           ))}
         </div>
 
@@ -35,20 +38,19 @@ const Doctor = () => {
 
       {/* Specialists Categories */}
       <div className="specialists-list-container">
-        <Link to="#" className="specialist doctorPage-Link-headings">
+        <Link to="/specialists" className="specialist doctorPage-Link-headings">
           <h1>Specialists ➡</h1>
         </Link>
 
         <div className="specialist-container doctorPage-cardContainer">
-          {SPECIALISTS.map((spe) => (
-            <Link key={spe.id} className="specialist-card" to={`/specialist/${spe.id}`}>
-              <div className="specialist-icon">
-                <img src={profileIcon} alt={spe.category} />
-              </div>
-              <div className="specialist-name">
-                <p>{spe.category}</p>
-              </div>
-            </Link>
+          {SPECIALISTS.slice(0,4).map((spe) => (
+            <Card
+              key={spe.id}
+              variant="small"
+              path={`/specialist/${spe.id}`}
+              img={profileIcon}
+              title={spe.category}
+            ></Card>
           ))}
         </div>
 
