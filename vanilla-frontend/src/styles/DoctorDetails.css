@@ -74,6 +74,26 @@
   margin-bottom: 2rem;
 }
 
+/* Status colors */
+.status-available {
+  color: green;
+  font-weight: bold;
+}
+
+.status-unavailable {
+  color: red;
+  font-weight: bold;
+}
+
+/* Disabled button */
+.book-appointment-btn.disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+
 .book-appointment-btn {
   display: flex;
   justify-content: center;

@@ -22,7 +22,7 @@ export const MEDICINE_DATA = [
       inStock: true,
       category: "Pain Relief",
       description: "Common pain and fever medication",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQnRWuXWLoWOz5l_msBpBwwB83ZlWoMFPfA&s"
+      image: "https://www.emirates247.com/polopoly_fs/1.578741.1452283362!/image/image.jpg"
     },
     {
       id: "3",
@@ -33,7 +33,7 @@ export const MEDICINE_DATA = [
       inStock: true,
       category: "Antacid",
       description: "Used for treating stomach ulcers and acid reflux",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQnRWuXWLoWOz5l_msBpBwwB83ZlWoMFPfA&s"
+      image: "https://assets.truemeds.in/Images/ProductImage/TM-CALE1-000100/pan-d-30-40-mg-capsule-sr-10_pan-d-3040-mg-capsule-sr-10--TM-CALE1-000100_1.png?tr=cm-pad_resize,bg-FFFFFF,lo-true,w-315"
     },
     {
       id: "4",
@@ -44,7 +44,7 @@ export const MEDICINE_DATA = [
       inStock: true,
       category: "Pain Relief",
       description: "Pain reliever and blood thinner",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyQnRWuXWLoWOz5l_msBpBwwB83ZlWoMFPfA&s"
+      image: "https://cdn.onbuy.com/product/65af44cc21893/500-500/aspirin-vitamin-c-effervescent-tablets-10s.jpg"
     },
     {
       id: "5",
