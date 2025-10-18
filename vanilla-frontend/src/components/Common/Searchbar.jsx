@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import "../styles/Searchbar.css";
-import Usericon from "../assets/user-solid-full.svg";
-import Hamburger from "../assets/hamburger.svg";
-import Language from "../assets/language.svg";
-import Location from "../assets/location-dot.svg";
-import Settings from "../assets/settingbtn.svg";
-import Search from "../assets/searchicon.svg";
-import { useSearch } from "../contexts/SearchContext";
+import Usericon from "../../assets/user-solid-full.svg";
+import Hamburger from "../../assets/hamburger.svg";
+import Language from "../../assets/language.svg";
+import Location from "../../assets/location-dot.svg";
+import Settings from "../../assets/settingbtn.svg";
+import Search from "../../assets/searchicon.svg";
+import { useSearch } from "../../contexts/SearchContext";
+import "../../styles/Common/Searchbar.css"
 
 export default function Searchbar() {
   const navigate = useNavigate();

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import { Outlet } from "react-router-dom";
-import Searchbar from "./components/Searchbar";
+import Searchbar from "./components/Common/Searchbar";
 import Navbar from "./components/Common/Navbar";
 import { SearchProvider } from "./contexts/SearchContext";
 
