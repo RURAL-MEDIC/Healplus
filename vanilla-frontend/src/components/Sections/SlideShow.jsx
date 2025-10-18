@@ -1,11 +1,11 @@
 import React, {useEffect, useState } from "react";
-import japan8 from "../assets/AIslide.jpg"; // adjust path
-import japan9 from "../assets/Slide2.png"; // adjust path
-import japan10 from "../assets/Slide3.jpg"; // adjust path
+import japan8 from "../../assets/AIslide.jpg"; // adjust path
+import japan9 from "../../assets/Slide2.png"; // adjust path
+import japan10 from "../../assets/Slide3.jpg"; // adjust path
 
 
 
-import "../styles/SlideShow.css";
+import "../../styles/Sections/SlideShow.css";
 
 const Slideshow = () => {
   const slides = [

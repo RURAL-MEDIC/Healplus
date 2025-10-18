@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import ChatIcon from "../assets/chatbot2.0.png"
 import Down from "../assets/downarrow.svg"
-import "../styles/Aichat.css";
+import "../styles/Chatbot/Aichat.css";
 import ChatbotMsg from '../components/Chatbot/ChatbotMsg';
 import ChatbotFooter from '../components/Chatbot/ChatbotForm';
 import generateBotResponse from '../Api_backend/GenerateBotResponse';

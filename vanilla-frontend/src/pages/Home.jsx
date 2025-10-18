@@ -1,10 +1,10 @@
 import React from 'react';
-import CallDocNAmbulance from '../components/CallDocNAmbulance';
+import CallDocNAmbulance from '../pages/CallDocNAmbulance';
 import "../styles/Home.css";
-import LatestNews from '../components/LatestNews';
-import EmergencyBtn from '../components/EmergencyBtn';
-import Features from '../components/Features';
-import SlideShow from '../components/SlideShow';
+import LatestNews from '../components/Sections/LatestNews';
+import EmergencyBtn from '../components/Common/EmergencyBtn';
+import Features from '../components/Sections/Features';
+import SlideShow from '../components/Sections/SlideShow';
 
 const Home = () => {
     return (

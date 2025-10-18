@@ -1,9 +1,8 @@
 import { useState } from "react";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import { Outlet } from "react-router-dom";
 import Searchbar from "./components/Searchbar";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Common/Navbar";
 import { SearchProvider } from "./contexts/SearchContext";
 
 function App() {

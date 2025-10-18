@@ -1,21 +1,5 @@
-
-// import React from 'react';
-// import '../styles/EmergencyBtn.css';
-
-// const EmergencyBtn = () => {
-//     return (
-//         <div className='EmergencyBtn'>
-//             <button className="button-24" role="button">Emergency Button</button>            
-//         </div>
-//     );
-// }
-
-// export default EmergencyBtn;
-
-
-
 import React, { useState, useRef, useEffect } from 'react';
-import '../styles/EmergencyBtn.css';
+import '../../styles/Common/EmergencyBtn.css';
 
 const EmergencyBtn = () => {
     const emergencyNumber = "+919831753398"; // change as needed
