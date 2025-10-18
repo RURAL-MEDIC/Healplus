@@ -74,7 +74,7 @@ export default function Searchbar() {
         </div>
       </div>
 
-      {/* Rest of the hamburger menu remains the same */}
+      {/* hamburger menu */}
       <div className="hamburger-menu">
         <div className="wrapper"></div>
         <div className="menu">
