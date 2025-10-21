@@ -11,6 +11,7 @@ import Map from "./pages/MapPage.jsx";
 import DocDashboard from "./pages/DocDashboard.jsx";
 import DoctorDetails from "./pages/DoctorDetails.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import "./i18n/i18n.js";
 
 import "./index.css";
 

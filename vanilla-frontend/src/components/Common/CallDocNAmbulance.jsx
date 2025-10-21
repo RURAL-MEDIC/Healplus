@@ -1,11 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
-import "../styles/CallDocNAmbulance.css";
+import "../../styles/Common/CallDocNAmbulance.css";
 
 export default function CallDocNAmbulance() {
-  // Change the phone number below to the emergency number you want to dial
-  const ambulanceNumber = "+919831753398"; // Enter your ambulance number here
+  // Changing Language
+  const { t } = useTranslation();
+
+  const ambulanceNumber = "+919831753398"; // Enter ambulance number here
 
   const [showFallback, setShowFallback] = useState(false);
   const fallbackRef = useRef(null);
@@ -81,14 +84,14 @@ export default function CallDocNAmbulance() {
         onClick={handleAmbulanceClick}
       >
         <div>📞</div>
-        <p>Call an Ambulance</p>
+        {/* <p>Call an Ambulance</p> */}
+        <p>{t("call.ambulance")}</p>
       </a>
 
       <Link to="/doc-dashboard" className="ambulance">
         <div>🩺</div>
         <p>
-          Consult <br />
-          Doctor
+          {t("call.doctor")}
         </p>
       </Link>
 
@@ -108,13 +111,13 @@ export default function CallDocNAmbulance() {
             </p>
             <div className="ambulance-actions">
               <a className="btn primary" href={`tel:${ambulanceNumber}`}>
-                Open Dialer
+                {t("call.title")}
               </a>
               <button className="btn" onClick={handleCopy}>
-                Copy Number
+                {t("copy_number")}
               </button>
               <button className="btn" onClick={() => setShowFallback(false)}>
-                Close
+                {t("close")}
               </button>
             </div>
           </div>
