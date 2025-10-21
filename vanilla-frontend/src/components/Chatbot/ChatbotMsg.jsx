@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/Aichat.css";
+import "../../styles/Chatbot/Aichat.css";
 import ChatIcon from "../../assets/chatbot2.0.png"
 
 const ChatbotMsg = ({ msg }) => {

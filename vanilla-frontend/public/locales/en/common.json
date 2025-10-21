@@ -1,0 +1,17 @@
+{
+  "call": {
+    "title": "Call",
+    "doctor": "Consult Doctor",
+    "emergency": "Call Emergency",
+    "ambulance": "Call an Ambulance"
+  },
+  "copy_number": "Copy Number",
+  "close": "Close",
+  "ai_chat": {
+    "line1": "AI Chat",
+    "line2": "Chat with AI"
+  },
+  "medical_history": "Medical History",
+  "check_bed": "Check Hospital Bed",
+  "search_medicine": "Search Medicine"
+}

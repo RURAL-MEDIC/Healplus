@@ -1,22 +1,18 @@
-import { useState } from "react";
-import viteLogo from "/vite.svg";
-import "./App.css";
 import { Outlet } from "react-router-dom";
-import Searchbar from "./components/Searchbar";
-import Navbar from "./components/Navbar";
+import Searchbar from "./components/Common/Searchbar";
+import Navbar from "./components/Common/Navbar";
 import { SearchProvider } from "./contexts/SearchContext";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <SearchProvider>
-      <Searchbar />
-      <main className="main-content">
-        <Outlet />
-      </main>
-      <Navbar />
-    </SearchProvider>
+      <SearchProvider>
+        <Searchbar />
+        <main className="main-content">
+          <Outlet />
+        </main>
+        <Navbar />
+      </SearchProvider>
   );
 }
 
