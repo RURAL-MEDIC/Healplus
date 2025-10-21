@@ -4,8 +4,7 @@ import Homeicon from "../assets/house.svg"
 import Chaticon from "../assets/chatbot.png"
 import Medicineicon from "../assets/pill.svg"
 import Doctoricon from "../assets/stethoscope.svg"
-
-import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom'
 
 
 export default function Navbar() {
@@ -14,10 +13,10 @@ export default function Navbar() {
         <div className="navbar">
             <div className="links">
                 
-                <Link to="/"><img src={Homeicon} alt=""/>Home</Link>
-                <Link to="/doctor"><img src={Doctoricon} alt=""/>Doctor</Link>
-                <Link to="/medicine"><img src={Medicineicon} alt=""/>Medicine</Link>
-                <Link to="/chat"><img src={Chaticon} alt=""/>Chat</Link>
+                <NavLink to="/" className={({isActive}) => isActive ? "selected" : ""}><img src={Homeicon} alt=""/>Home</NavLink>
+                <NavLink to="/doctor" className={({isActive}) => isActive ? "selected" : ""}><img src={Doctoricon} alt=""/>Doctor</NavLink>
+                <NavLink to="/medicine"  className={({isActive}) => isActive ? "selected" : ""}><img src={Medicineicon} alt=""/>Medicine</NavLink>
+                <NavLink to="/chat"  className={({isActive}) => isActive ? "selected" : ""}><img src={Chaticon} alt=""/>Chat</NavLink>
               
             </div>
         </div>
