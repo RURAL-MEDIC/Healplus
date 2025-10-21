@@ -8,17 +8,19 @@
   left: 0;
   border-top: 1px solid #6e6e6e;
   z-index: 100;
-  padding: 5px;
-
+  display: flex;
+  align-items: center;
 }
 .navbar .links {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .navbar .links a {
-  width: 60px;
+  width: 55px;
+  height: 55px;
   text-decoration: none;
   color: #000000;
   display: flex;
@@ -26,13 +28,18 @@
   align-items: center;
   justify-content: center;
   font-family: sans-serif;
-  font-size: 0.85rem;
   /* border-radius: 8px; */
 }
 .navbar .links img {
   height: 24px;
   width: 24px;
-  margin-bottom: 3px;
+  /* margin-bottom: 3px; */
+}
+
+.navbar .links p{
+  padding: 0;
+  margin: 0;
+  font-size: 70%;
 }
 
 .navbar .selected {

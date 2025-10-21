@@ -13,10 +13,10 @@ export default function Navbar() {
         <div className="navbar">
             <div className="links">
                 
-                <NavLink to="/" className={({isActive}) => isActive ? "selected" : ""}><img src={Homeicon} alt=""/>Home</NavLink>
-                <NavLink to="/doctor" className={({isActive}) => isActive ? "selected" : ""}><img src={Doctoricon} alt=""/>Doctor</NavLink>
-                <NavLink to="/medicine"  className={({isActive}) => isActive ? "selected" : ""}><img src={Medicineicon} alt=""/>Medicine</NavLink>
-                <NavLink to="/chat"  className={({isActive}) => isActive ? "selected" : ""}><img src={Chaticon} alt=""/>Chat</NavLink>
+                <NavLink to="/" className={({isActive}) => isActive ? "selected" : ""}><img src={Homeicon} alt=""/><p>Home</p></NavLink>
+                <NavLink to="/doctor" className={({isActive}) => isActive ? "selected" : ""}><img src={Doctoricon} alt=""/><p>Doctor</p></NavLink>
+                <NavLink to="/medicine"  className={({isActive}) => isActive ? "selected" : ""}><img src={Medicineicon} alt=""/><p>Medicine</p></NavLink>
+                <NavLink to="/chat"  className={({isActive}) => isActive ? "selected" : ""}><img src={Chaticon} alt=""/><p>Chat</p></NavLink>
               
             </div>
         </div>
