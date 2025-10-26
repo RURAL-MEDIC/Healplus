@@ -1,10 +1,10 @@
 import { useParams, Link } from "react-router-dom";
-import { GENERAL_DOCTORS } from "../data/doctorData"; // ✅ make sure path is correct
+import Doctors from "../data/doctorData.json"; // ✅ make sure path is correct
 import "../styles/DoctorDetails.css";
 
 const DoctorDetails = () => {
   const { id } = useParams();
-  const doctor = GENERAL_DOCTORS.find((doc) => doc.id === id);
+  const doctor = Doctors.find((doc) => doc.id === id);
 
   if (!doctor) {
     return <h2 className="doctor-not-found">Doctor not found</h2>;

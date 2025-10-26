@@ -1,4 +1,8 @@
 {
+  "home": "Home",
+  "doctor": "Doctor",
+  "medicine": "Medicine",
+  "Chat": "Chat",
   "call": {
     "title": "Call",
     "doctor": "Consult Doctor",

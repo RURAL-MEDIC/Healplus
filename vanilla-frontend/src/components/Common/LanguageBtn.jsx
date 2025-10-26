@@ -1,11 +1,12 @@
 import React, { useEffect, useState, useRef } from "react";
 import Language from "../../assets/language.svg";
-import "../../styles/Common/LanguageBtn.css";
 import { useTranslation } from "react-i18next";
+import "../../styles/Common/LanguageBtn.css";
 
 const languages = [
   { code: "en", lang: "English" },
   { code: "pn", lang: "Punjabi" },
+  { code: "hi", lang: "Hindi" },
 ];
 
 const LanguageBtn = () => {
@@ -42,16 +43,15 @@ const LanguageBtn = () => {
 
   return (
     <div className="LanguageBtn-container" ref={dropdownRef}>
-      {!isOpen && (
-        <button
-          className="langBtn"
-          onClick={handleToggle}
-          aria-haspopup="true"
-          aria-expanded={isOpen}
-        >
-          <img src={Language} height="22px" />
-        </button>
-      )}
+      <button
+        className="langBtn"
+        onClick={handleToggle}
+        aria-haspopup="true"
+        aria-expanded={isOpen}
+      >
+        <img src={Language} height="22px" />
+      </button>
+
       {isOpen && (
         <div className="dropdown" role="menu">
           {languages.map((lng) => {

@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import { GENERAL_DOCTORS } from "../data/doctorData";
+import Doctors from "../data/doctorData.json";
 import { useState } from "react";
 import "../styles/Appointment.css";
 
 const Appointment = () => {
   const { id } = useParams();
-  const doctor = GENERAL_DOCTORS.find((doc) => doc.id === id);
+  const doctor = Doctors.find((doc) => doc.id === id);
 
   const [toast, setToast] = useState({ show: false, message: "" });
 

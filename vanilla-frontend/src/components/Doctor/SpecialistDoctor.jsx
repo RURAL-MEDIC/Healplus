@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Card from "../Common/Card";
 import ShowMore from "../Common/ShowMore";
 import profileIcon from "../../assets/user-solid-full.svg";
-import { SPECIALISTS } from "../../data/doctorData";
+import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/SpecialistDoctor.css";
 
 const SpecialistDoctor = () => {
@@ -14,7 +14,7 @@ const SpecialistDoctor = () => {
       </Link>
 
       <ShowMore
-        items={SPECIALISTS}
+        items={Doctors}
         renderItem={(spe) => (
           <Card
             key={spe.id}

@@ -1,10 +1,12 @@
 import React from "react";
-import Card from "../Common/Card"
-import ShowMore from "../Common/ShowMore"
-import { GENERAL_DOCTORS } from "../../data/doctorData";
+import Card from "../Common/Card";
+import ShowMore from "../Common/ShowMore";
+import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/GeneralDoctor.css";
 
 const GeneralDoctor = () => {
+  const generalDoctor = Doctors.find(doc => doc.category === "General");
+
   return (
     <div className="GeneralDoctor">
       <div className="heading-link">
@@ -12,7 +14,7 @@ const GeneralDoctor = () => {
       </div>
 
       <ShowMore
-        items={GENERAL_DOCTORS}
+        items={generalDoctor.doctors}
         renderItem={(doc) => (
           <Card
             key={doc.id}
@@ -23,7 +25,9 @@ const GeneralDoctor = () => {
             info={doc.role}
           />
         )}
-      >View all General Doctor</ShowMore>
+      >
+        View all General Doctor
+      </ShowMore>
     </div>
   );
 };
