@@ -1,8 +1,13 @@
 {
   "home": "Home",
   "doctor": "Doctor",
-  "medicine": "Medicine",
-  "Chat": "Chat",
+  "medicine": {
+    "title": "Medicine",
+    "common": "Common Medicine",
+    "essential": "Essential Medicine",
+    "call": "Call Nearest Medicine Shop"
+  },
+  "chat": "Chat",
   "call": {
     "title": "Call",
     "doctor": "Consult Doctor",

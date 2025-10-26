@@ -3,14 +3,17 @@ import Card from "../Common/Card";
 import ShowMore from "../Common/ShowMore";
 import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/GeneralDoctor.css";
+import { useTranslation } from "react-i18next";
 
 const GeneralDoctor = () => {
-  const generalDoctor = Doctors.find(doc => doc.category === "General");
+  const { t } = useTranslation("doctor");
+
+  const generalDoctor = Doctors.find((doc) => doc.category === "General");
 
   return (
     <div className="GeneralDoctor">
       <div className="heading-link">
-        <h1>General Doctor ➡</h1>
+        <h1>{t("doctor.general")} ➡</h1>
       </div>
 
       <ShowMore
@@ -26,7 +29,7 @@ const GeneralDoctor = () => {
           />
         )}
       >
-        View all General Doctor
+        {t("doctor.all")}
       </ShowMore>
     </div>
   );

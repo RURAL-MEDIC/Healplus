@@ -5,12 +5,14 @@ import ShowMore from "../Common/ShowMore";
 import profileIcon from "../../assets/user-solid-full.svg";
 import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/SpecialistDoctor.css";
+import { useTranslation } from "react-i18next";
 
 const SpecialistDoctor = () => {
+  const {t} = useTranslation("doctor")
   return (
     <div className="SpecialistDoctor">
       <Link to="/specialists" className="heading-link">
-        <h1>Specialists ➡</h1>
+        <h1>{t("spl.title")} ➡</h1>
       </Link>
 
       <ShowMore
@@ -25,7 +27,7 @@ const SpecialistDoctor = () => {
           />
         )}
       >
-        View All Specialists
+        {t("spl.all")}
       </ShowMore>
     </div>
   );
