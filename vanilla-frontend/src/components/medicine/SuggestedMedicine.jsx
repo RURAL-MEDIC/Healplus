@@ -3,8 +3,10 @@ import { useSearch } from "../../contexts/SearchContext";
 import Card from "../Common/Card";
 import { MEDICINE_DATA } from "../../data/medicineData";
 import "../../styles/SuggestedMedicine.css";
+import { useTranslation } from "react-i18next";
 
 export default function SuggestedMedicine() {
+  const { t } = useTranslation();
   const { searchTerm, searchResults } = useSearch();
 
   // If there's a search term, don't show suggested medicines
@@ -17,7 +19,7 @@ export default function SuggestedMedicine() {
 
   return (
     <div className="SuggestedMedicine">
-      <h2>Common Medicines</h2>
+      <h2>{t("medicine.common")}</h2>
       <div className="SuggestedMedicineCardContainer">
         {commonMedicines.map((medicine) => (
           <Card

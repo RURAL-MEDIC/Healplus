@@ -3,11 +3,16 @@ import { MEDICINE_DATA } from "../../data/medicineData";
 import Card from "../Common/Card";
 import "../../styles/Medicine/AllMedicine.css";
 import ShowMore from "../Common/ShowMore";
+import { useTranslation } from "react-i18next";
 
 const AllMedicine = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="AllMedicine">
-      <h2>All Available Medicines ({MEDICINE_DATA.length})</h2>
+      <h2>
+        {t("medicine.essential")} ({MEDICINE_DATA.length})
+      </h2>
 
       <ShowMore
         items={MEDICINE_DATA}

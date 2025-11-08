@@ -3,18 +3,20 @@ import { Link } from "react-router-dom";
 import Card from "../Common/Card";
 import ShowMore from "../Common/ShowMore";
 import profileIcon from "../../assets/user-solid-full.svg";
-import { SPECIALISTS } from "../../data/doctorData";
+import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/SpecialistDoctor.css";
+import { useTranslation } from "react-i18next";
 
 const SpecialistDoctor = () => {
+  const {t} = useTranslation("doctor")
   return (
     <div className="SpecialistDoctor">
       <Link to="/specialists" className="heading-link">
-        <h1>Specialists ➡</h1>
+        <h1>{t("spl.title")} ➡</h1>
       </Link>
 
       <ShowMore
-        items={SPECIALISTS}
+        items={Doctors}
         renderItem={(spe) => (
           <Card
             key={spe.id}
@@ -25,7 +27,7 @@ const SpecialistDoctor = () => {
           />
         )}
       >
-        View All Specialists
+        {t("spl.all")}
       </ShowMore>
     </div>
   );

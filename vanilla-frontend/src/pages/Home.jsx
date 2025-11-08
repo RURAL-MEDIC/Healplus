@@ -1,5 +1,5 @@
 import React from 'react';
-import CallDocNAmbulance from '../pages/CallDocNAmbulance';
+import CallDocNAmbulance from '../components/Common/CallDocNAmbulance';
 import "../styles/Home.css";
 import LatestNews from '../components/Sections/LatestNews';
 import EmergencyBtn from '../components/Common/EmergencyBtn';

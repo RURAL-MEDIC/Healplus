@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import LanguageBtn from "./LanguageBtn";
 import Usericon from "../../assets/user-solid-full.svg";
 import Hamburger from "../../assets/hamburger.svg";
-import Language from "../../assets/language.svg";
 import Location from "../../assets/location-dot.svg";
 import Settings from "../../assets/settingbtn.svg";
 import Search from "../../assets/searchicon.svg";
 import { useSearch } from "../../contexts/SearchContext";
 import "../../styles/Common/Searchbar.css"
+import { useTranslation } from "react-i18next";
 
 export default function Searchbar() {
+  const {t} = useTranslation();
+
   const navigate = useNavigate();
   const { updateSearchTerm, performSearch, searchTerm, clearSearch } =
     useSearch();
@@ -51,7 +54,7 @@ export default function Searchbar() {
             <input
               type="text"
               id="search-inp"
-              placeholder="Search medicines..."
+              placeholder={`${t("search_medicine")}...`}
               value={localSearchTerm}
               onChange={handleInputChange}
             />
@@ -62,9 +65,7 @@ export default function Searchbar() {
         </div>
 
         <div className="right-btn-grp">
-          <div className="lang-btn round-btn">
-            <img src={Language} height="22px" />
-          </div>
+          <LanguageBtn />
           <button
             className="offer-btn round-btn"
             onClick={() => navigate("/map")}

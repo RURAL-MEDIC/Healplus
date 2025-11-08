@@ -1,18 +1,23 @@
 import React from "react";
-import Card from "../Common/Card"
-import ShowMore from "../Common/ShowMore"
-import { GENERAL_DOCTORS } from "../../data/doctorData";
+import Card from "../Common/Card";
+import ShowMore from "../Common/ShowMore";
+import Doctors from "../../data/doctorData.json";
 import "../../styles/DoctorComponent/GeneralDoctor.css";
+import { useTranslation } from "react-i18next";
 
 const GeneralDoctor = () => {
+  const { t } = useTranslation("doctor");
+
+  const generalDoctor = Doctors.find((doc) => doc.category === "General");
+
   return (
     <div className="GeneralDoctor">
       <div className="heading-link">
-        <h1>General Doctor ➡</h1>
+        <h1>{t("doctor.general")} ➡</h1>
       </div>
 
       <ShowMore
-        items={GENERAL_DOCTORS}
+        items={generalDoctor.doctors}
         renderItem={(doc) => (
           <Card
             key={doc.id}
@@ -23,7 +28,9 @@ const GeneralDoctor = () => {
             info={doc.role}
           />
         )}
-      >View all General Doctor</ShowMore>
+      >
+        {t("doctor.all")}
+      </ShowMore>
     </div>
   );
 };

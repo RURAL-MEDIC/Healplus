@@ -1,15 +1,16 @@
-import React, {useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import japan8 from "../../assets/AIslide.jpg"; // adjust path
 import japan9 from "../../assets/Slide2.png"; // adjust path
 import japan10 from "../../assets/Slide3.jpg"; // adjust path
 
-
-
 import "../../styles/Sections/SlideShow.css";
+import { useTranslation } from "react-i18next";
 
 const Slideshow = () => {
+  const {t} = useTranslation();
+
   const slides = [
-    { img: japan8, caption: "Chat with AI", link: "/chat" },
+    { img: japan8, caption: `${t("ai_chat.line2")}`, link: "/chat" },
     { img: japan9, caption: "Caption Two" },
     { img: japan10, caption: "Caption Three" },
   ];
@@ -26,9 +27,9 @@ const Slideshow = () => {
   }, [slides.length]);
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const prevSlide = () =>
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
   const goToSlide = (index) => setCurrent(index);
-
 
   return (
     <div>
@@ -40,17 +41,39 @@ const Slideshow = () => {
             className={`mySlides fade`}
             style={{ display: index === current ? "block" : "none" }}
           >
-            <div className="numbertext">{index + 1} / {slides.length}</div>
-            <img src={slide.img} alt={`slide ${index + 1}`} style={{ width: "100%" }} />
-            <div className="text"><a href={slide.link} style={{ color: "white", textDecoration: "underline" , fontSize: "18px", backgroundColor: "rgba(0,0.2,0,0.3", padding: "6px", borderRadius: "5px" }}>
+            <div className="numbertext">
+              {index + 1} / {slides.length}
+            </div>
+            <img
+              src={slide.img}
+              alt={`slide ${index + 1}`}
+              style={{ width: "100%" }}
+            />
+            <div className="text">
+              <a
+                href={slide.link}
+                style={{
+                  color: "white",
+                  textDecoration: "underline",
+                  fontSize: "18px",
+                  backgroundColor: "rgba(0,0.2,0,0.3",
+                  padding: "6px",
+                  borderRadius: "5px",
+                }}
+              >
                 {slide.caption}
-              </a></div>
+              </a>
+            </div>
           </div>
         ))}
 
         {/* Next and previous buttons */}
-        <a className="prev" onClick={prevSlide}>&#10094;</a>
-        <a className="next" onClick={nextSlide}>&#10095;</a>
+        <a className="prev" onClick={prevSlide}>
+          &#10094;
+        </a>
+        <a className="next" onClick={nextSlide}>
+          &#10095;
+        </a>
       </div>
 
       {/* The dots/circles */}

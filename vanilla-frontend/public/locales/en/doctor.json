@@ -1,0 +1,11 @@
+{
+  "doctor": {
+    "title": "Doctor",
+    "general": "General Doctors",
+    "all": "View All General Doctors"
+  },
+  "spl": {
+    "title": "Specialists",
+    "all": "View All Specialists"
+  }
+}
